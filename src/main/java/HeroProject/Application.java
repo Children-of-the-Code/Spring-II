@@ -15,3 +15,10 @@ public class Application {
         SpringApplication.run(Application.class);
     }
 }
+/*
+Spring core - dependency injection, IOC, beans
+Spring mvc - model/view/controller, web framework (http requests/responses, json mapping)
+spring boot - autoconfiguration of spring project
+spring orm - object relational mapping - maps java objects to their database representations
+spring data/jpa - spring's database persistence api
+ */
