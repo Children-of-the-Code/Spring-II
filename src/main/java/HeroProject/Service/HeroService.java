@@ -26,4 +26,7 @@ public class HeroService {
     public Hero getHeroByName(String name){
         return heroRepository.findHeroByName(name);
     }
+    public Hero getLastHeryAlphabetically(){
+        return heroRepository.findLastHeroAlphabetically();
+    }
 }

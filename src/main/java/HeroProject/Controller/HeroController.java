@@ -37,4 +37,8 @@ public class HeroController {
     public Hero getHeroByName(@PathVariable String name){
         return heroService.getHeroByName(name);
     }
+    @GetMapping("last")
+    public Hero getLastHeroAlphabetically(){
+        return heroService.getLastHeryAlphabetically();
+    }
 }

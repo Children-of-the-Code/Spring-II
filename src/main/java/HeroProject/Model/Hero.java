@@ -5,9 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /*
 What we'll be using here instead of JDBC is something called an ORM - object relational mapping
@@ -23,6 +21,7 @@ as if we're directly manipulating that table
 public class Hero {
     @Id
     @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int hero_ID;
     @Column
     private String name;
